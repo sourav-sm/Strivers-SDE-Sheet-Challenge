@@ -56,18 +56,3 @@ void sort012(int *arr, int n)
    }
 
 }
-//find dublicates
-
-int findDuplicate(vector<int> &arr, int n){
-	// Write your code here.
-	int sum=0;
-	int sum1=0;
-	for(int i=0;i<n;i++){
-		sum+=arr[i];
-	}
-	for(int i=1;i<=n-1;i++){
-		sum1+=i;
-	}
-	return sum-sum1;
-}
-
